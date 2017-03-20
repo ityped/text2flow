@@ -55,6 +55,10 @@
 
 ![draw.io sketch](/docs/samples/phase-1a/view.draw.io.png "draw.io sketch")
 
+> **text2flow**
+>
+> TODO: implement phaseA and fill this section
+
 #### Phase 1b. FlowSpec
 
 #### Phase 1c. Backlinks
@@ -66,19 +70,21 @@
 > Grammar Schema should be implemented only in the second phase of development since it require more efforts.
 
 ```scala
-digit = /[0_9]/
-symbol = /[a_zA_Z]/
-decorative-delimiter = {
-	'-' | '+' | '=' | '/' | '\\' | '&' | '*' | \
-    '.' | '(' | ')' | '[' | ']' | '{' | '}' | \
-    '!' | '@' | '#' | '$' | '%' | '^' | '_' | \
-    ':' | '?' | '<' | '>' | ',' | '~'
-}
-guarding-open-delimiter = '"' | '{' | '['
-guarding-close-delimiter = '"' | '{' | '}'
-inner-char = digit | symbol | decorative-delimiter
-backslashed-guardian-delimiter = '\"'
-string = guarding-delimiter ~ (inner-char | backslashed-guardian-delimiter) ~ guardian-delimiter
-indent = '\t'
-// TODO: complete Grammar Schema
+
+    digit = /[0_9]/
+    symbol = /[a_zA_Z]/
+    decorative-delimiter = {
+        '-' | '+' | '=' | '/' | '\\' | '&' | '*' | \
+        '.' | '(' | ')' | '[' | ']' | '{' | '}' | \
+        '!' | '@' | '#' | '$' | '%' | '^' | '_' | \
+        ':' | '?' | '<' | '>' | ',' | '~'
+    }
+    guarding-open-delimiter = '"' | '{' | '['
+    guarding-close-delimiter = '"' | '{' | '}'
+    inner-char = digit | symbol | decorative-delimiter
+    backslashed-guardian-delimiter = '\"'
+    string = guarding-delimiter ~ (inner-char | backslashed-guardian-delimiter) ~ guardian-delimiter
+    indent = '\t'
+    // TODO: complete Grammar Schema
+
 ```
