@@ -1,0 +1,18 @@
+digraph D {
+	 RootNodeA,
+	 InnerNodeA,InnerNodeB,
+	 LeafNodeA, LeafNodeB,LeafNodeC, LeafNodeD, leafNodeE, LeafNodeF;
+	
+	RootNodeA -> InnerNodeA;
+	
+		InnerNodeA -> LeafNodeA;
+		InnerNodeA -> LeafNodeB;
+
+	RootNodeA -> LeafNodeC;
+
+	RootNodeA -> InnerNodeB;
+
+		InnerNodeB -> LeafNodeD;
+		InnerNodeB -> LeafNodeE;
+		InnerNodeB -> LeafNodeF;
+}
