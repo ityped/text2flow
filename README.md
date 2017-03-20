@@ -24,9 +24,30 @@
 ##### How it could be done in
 
 > **GraphViz**
-    ```dot
+
+```dot
     
-    ```
+    digraph D {
+    	 RootNodeA,
+    	 InnerNodeA,InnerNodeB,
+    	 LeafNodeA, LeafNodeB,LeafNodeC, LeafNodeD, leafNodeE, LeafNodeF;
+    	
+    	RootNodeA -> InnerNodeA;
+    	
+    		InnerNodeA -> LeafNodeA;
+    		InnerNodeA -> LeafNodeB;
+    
+    	RootNodeA -> LeafNodeC;
+    
+    	RootNodeA -> InnerNodeB;
+    
+    		InnerNodeB -> LeafNodeD;
+    		InnerNodeB -> LeafNodeE;
+    		InnerNodeB -> LeafNodeF;
+    }
+    
+```
+    
     
 ![GraphViz diagram](/docs/samples/phase-1a/view.dot.png "GraphViz diagram")
 
