@@ -1,5 +1,7 @@
 # `text2flow`
 
+[![Join the chat at https://gitter.im/text2flow/Lobby](https://badges.gitter.im/text2flow/Lobby.svg)](https://gitter.im/text2flow/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > Live text to flowcharts converter
 > Purposes of creation: documenting Lithography project
 
