@@ -1,8 +1,19 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Text2Flow Testing Page</title>
     </head>
     <body>
+        <div id="test-sandbox"</div>
+        <script>
+            window.__test__ = {
+                sandbox: {
+                    dom: document.getElementById("test-sandbox")
+                }
+            };
+        </script>
+        <script src="src/shared/future.js"></script>
+        <script src="src/shared/future.test.js"></script>
         <script src="index.test.js"></script>
     </body>
 </html>
