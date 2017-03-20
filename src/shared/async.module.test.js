@@ -23,7 +23,7 @@ function TestFutureModuleTemplate(settings) {
 	return this;
 }
 
-new asyncModule(new TestFutureModuleTemplate({
+asyncModule(new TestFutureModuleTemplate({
 	__test__: window.__test__,
 	inputValue: 1
 })).nextAction(function (module) {
